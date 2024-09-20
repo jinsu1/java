@@ -11,7 +11,8 @@ public class arr_quiz12 {
                 sum += grade[i][j];
             }
             avgSum += sum / grade[i].length;
-            System.out.print(avgSum / student.length);
+            System.out.print(avgSum /
+             student.length);
         }
     }
 }

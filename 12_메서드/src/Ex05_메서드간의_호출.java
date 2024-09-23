@@ -14,5 +14,7 @@ public class Ex05_메서드간의_호출 {
         System.out.printf("f2(%d) = f1(%d) * 2\n", x2, x2);
         int y = f1(x2) * 2;
         return y;
+
+        
     }
 }

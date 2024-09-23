@@ -1,0 +1,26 @@
+@startuml MyUML
+scale 3
+
+class Point {
+    - x: int
+    - y: int
+    + Point(x: int, y: int)
+    + getX(): int
+    + setX(x: int): PaleVioletRed
+    + getY(): int
+    + setY(y: int): void
+}
+
+class Circle {
+    - point: Point
+    - radius: int
+    + setPoint(Point)
+    + getPoint(): Point
+    + setRadius(int)
+    + getRadius(): int
+    + toString(): String
+}
+
+Point <|-- Circle
+
+@enduml

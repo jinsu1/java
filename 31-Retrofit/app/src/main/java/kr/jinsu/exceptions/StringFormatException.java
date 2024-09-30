@@ -1,4 +1,4 @@
-package kr.jinsu1.exceptions;
+package kr.jinsu.exceptions;
 
 public class StringFormatException extends Exception {
     public StringFormatException(String message) {

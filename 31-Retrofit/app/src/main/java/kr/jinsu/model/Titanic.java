@@ -9,7 +9,7 @@ public class Titanic {
     private int pclass;
     private String name;
     private String sex;
-    private double age;
+    private Double age;
     private int sibsp;
     private int parch;
     private String ticket;

@@ -54,7 +54,7 @@ public interface ProfessorService {
     Call<Professor> getProfessor(@Path("id") int id);
 
     /**
-     * 교수 정보 수정(keyweor를 포함하는 목록조회)
+     * 교수 정보 수정(keyword를 포함하는 목록조회)
      * @param position  직위이름
      * @return  professor List 객체
      */

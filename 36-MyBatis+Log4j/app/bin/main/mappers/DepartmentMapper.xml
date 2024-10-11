@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="DepartmentMapper">
+    <!-- Beans 클래스의 객체이름(id)과 클래스이름(type)을 명시한다. -->
+    <resultMap type="kr.jinsu.models.Department" id="department">
+        <!-- Beans의 멤버변수(property)이름과 대상 테이블의 컬럼(column)을 연결한다.
+        -->
+        <result property="deptno" column="deptno" />
+        <result property="dname" column="dname" />
+        <result property="loc" column="loc" />
+    </resultMap>
+    <!-- 데이터 저장을 위한 기능 정의 -->
+    <insert id="insert"
+        parameterType="kr.jinsu.models.Department"
+        useGeneratedKeys="true"
+        keyProperty="deptno">
+        insert into department (dname, loc) values (#{dname}, #{loc});
+    </insert>
+
+    <!-- 데이터 삭제를 위한 기능 정의 -->
+    <delete id="delete"
+        parameterType="kr.jinsu.models.Department">
+        delete from department where deptno=#{deptno};
+    </delete>
+    
+    <!-- 데이터 갱신을 위한 기능 정의 -->
+    <update id="update"
+        parameterType="kr.jinsu.models.Department">
+        update department set dname=#{dname}, loc=#{loc} where deptno=#{deptno};
+    </update>
+
+    <!-- 단일행 조회를 위한 기능 정의 -->
+    <select id="selectItem"
+        parameterType="kr.jinsu.models.Department"
+        resultMap="department">
+        select deptno, dname, loc from department where deptno=#{deptno};
+    </select>
+
+    <!-- 다중행 조회를 위한 기능 정의 -->
+    <select id="selectList"
+        resultMap="department">
+        select deptno, dname, loc from department;
+    </select>
+</mapper>

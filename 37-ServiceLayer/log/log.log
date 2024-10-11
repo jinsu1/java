@@ -1,0 +1,21 @@
+2024-10-11 17:29:56,011 DEBUG [org.apache.ibatis.logging.LogFactory] Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2024-10-11 17:29:56,016 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
+2024-10-11 17:29:56,016 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
+2024-10-11 17:29:56,025 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
+2024-10-11 17:29:56,025 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
+2024-10-11 17:29:56,119 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Opening JDBC Connection
+2024-10-11 17:29:56,465 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] Created connection 1818449913.
+2024-10-11 17:29:56,465 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6c6357f9]
+2024-10-11 17:29:56,465 DEBUG [StudentMapper.deleteByProfno] ==>  Preparing: delete from student where profno=?;
+2024-10-11 17:29:56,503 DEBUG [StudentMapper.deleteByProfno] ==> Parameters: 9908(Integer)
+2024-10-11 17:29:56,503 DEBUG [StudentMapper.deleteByProfno] <==    Updates: 0
+2024-10-11 17:29:56,503 DEBUG [ProfessorMapper.delete] ==>  Preparing: delete from professor where profno=?;
+2024-10-11 17:29:56,503 DEBUG [ProfessorMapper.delete] ==> Parameters: 9908(Integer)
+2024-10-11 17:29:56,503 DEBUG [ProfessorMapper.delete] <==    Updates: 1
+2024-10-11 17:29:56,503 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6c6357f9]
+2024-10-11 17:29:56,522 DEBUG [kr.jinsu.service_layer.App02_prof] 1====================
+2024-10-11 17:29:56,523 DEBUG [kr.jinsu.service_layer.App02_prof] 1개의 데이터 삭제 완료
+2024-10-11 17:29:56,524 DEBUG [kr.jinsu.service_layer.App02_prof] 1====================
+2024-10-11 17:29:56,524 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6c6357f9]
+2024-10-11 17:29:56,524 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6c6357f9]
+2024-10-11 17:29:56,524 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] Returned connection 1818449913 to pool.
